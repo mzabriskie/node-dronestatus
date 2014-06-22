@@ -1,7 +1,7 @@
 {
 	"name": "dronestatus",
 	"description": "AR.Drone 2.0 status in the browser via WebSocket",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"main": "index.js",
 	"browser": "./lib/client.js",
 	"author": {
