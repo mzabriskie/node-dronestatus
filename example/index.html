@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+
+<script src="/dronestatus/nodecopter-status.js"></script>
+<script>
+	var ns = new NodecopterStatus();
+	ns.on('change', function (message) {
+		console.log(JSON.parse(message.data));
+	});
+</script>
