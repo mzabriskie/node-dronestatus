@@ -1,26 +1,27 @@
 {
-	"name": "dronestatus",
-	"description": "AR.Drone 2.0 status in the browser via WebSocket",
-	"version": "0.1.1",
-	"main": "index.js",
-	"browser": "./lib/client.js",
-	"author": {
-		"name": "Matt Zabriskie",
-		"email": "mzabriskie@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mzabriskie/node-dronestatus.git"
-	},
-	"keywords": [
-		"drone",
-		"nodecopter",
-		"parrot",
-		"status",
-		"browser"
-	],
-	"dependencies": {
-		"ws": "~0.4.31",
-		"ar-drone": "~0.3.2"
-	}
+  "name": "dronestatus",
+  "description": "AR.Drone 2.0 status in the browser via WebSocket",
+  "version": "0.1.1",
+  "main": "index.js",
+  "browser": "./lib/client.js",
+  "author": {
+    "name": "Matt Zabriskie",
+    "email": "mzabriskie@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mzabriskie/node-dronestatus.git"
+  },
+  "keywords": [
+    "drone",
+    "nodecopter",
+    "parrot",
+    "status",
+    "browser"
+  ],
+  "dependencies": {
+    "ws": "~0.4.31",
+    "ar-drone": "~0.3.2",
+    "browserify": "^4.2.0"
+  }
 }
