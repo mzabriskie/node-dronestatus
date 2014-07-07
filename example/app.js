@@ -1,7 +1,10 @@
 var http = require('http'),
-    status = require('../index');
+    status = require('../index'),
+	drone = require('ar-drone'),
+	server, client;
 
-var server = http.createServer(function (req, res) {
+client = drone.createClient();
+server = http.createServer(function (req, res) {
 	require('fs').createReadStream(__dirname + '/index.html').pipe(res);
 });
 
@@ -9,5 +12,8 @@ status.on('change', function (data) {
 	console.log(data);
 });
 
-status.listen(server);
+status.listen(server, {
+	udpControl: client._udpControl,
+	udpNavdataStream: client._udpNavdatasStream
+});
 server.listen(5555);
